@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://allfont.ru/allfont.css?fonts=jakobctt-bold&subset=cyrillic-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/project2/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+      rel="shortcut icon"
+    />
+    <link type="Image/x-icon" href="assets/images/favicon.ico" rel="icon" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <div class="header__content-left">
+            <div class="header__logo header__logo-padding">
+              <svg>
+                <use xlink:href="assets/images/sprite.svg#header__logo"></use>
+              </svg>
+            </div>
+            <div class="header__menu header__menu-padding">
+              <input
+                class="header__burger-input"
+                type="checkbox"
+                id="header-burger"
+              />
+              <nav>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item"><a href="#data">About</a></li>
+                  <li class="header__menu-item">
+                    <a href="#who_we_are">Help</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#features">Features</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#footer">Sign Up</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header__content-right">
+            <div class="header__button header__button-padding">
+              <button
+                type="submit"
+                class="header__button-style header__button-style-padding"
+              >
+                Request Demo
+                <svg
+                  class="header__arrows"
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="header__arrows"
+                    d="M15 15L21 8L15 1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="header__arrows"
+                    d="M21 8H1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <label class="header__burger-label" for="header-burger">
+                <span class="header__burger header__burger-padding"> </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="data" class="data">
+        <div class="data__container data__padding">
+          <div class="data__content">
+            <div class="data__content-absolute">
+              <h1 class="data__content-caption">
+                Save your data storage here.
+              </h1>
+            </div>
+            <div class="data__content-left">
+              <div class="data__block-text data__block-text-padding">
+                <span class="data__content-text"
+                  >Data Warehouse is a data storage area that has been tested
+                  for security, so you can store your data here safely but not
+                  be afraid of being stolen by others.</span
+                >
+              </div>
+              <div class="data__content-button">
+                <button type="submit" class="data__content-button-style">
+                  Learn more
+                </button>
+              </div>
+            </div>
+            <div class="data__content-right">
+              <div class="data__content-image">
+                <img
+                  class="datae__content-image-style"
+                  width="770"
+                  height="407"
+                  src="assets/images/data__image.png"
+                  alt="data__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="who_we_are" class="who_we_are">
+        <div class="who_we_are__container who_we_are__bg who_we_are__padding">
+          <div class="who_we_are__content who_we_are__content-padding">
+            <div
+              class="who_we_are__content-left who_we_are__content-left-padding"
+            >
+              <img
+                class="who_we_are__content-left-image"
+                src="assets/images/who_we_are_image.png"
+                width="400"
+                height="410"
+                alt="who_we_are_image"
+              />
+            </div>
+            <div
+              class="who_we_are__content-right who_we_are__content-right-padding"
+            >
+              <h2
+                class="who_we_are__content-right-caption who_we_are__content-right-caption-padding"
+              >
+                We are a high-level data storage bank
+              </h2>
+              <div class="who_we_are__content-right-text">
+                <p>
+                  The place to store various data that you can access at any
+                  time through the internet and where you can carry it.
+                </p>
+                <p>
+                  This very flexible storage area has a high level of security.
+                  To enter into your own data you must enter the password that
+                  you created when you registered in this Data Warehouse.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="features">
+        <div class="features__container features__padding">
+          <div class="features__top">
+            <h1 class="features__caption features__caption-padding">
+              Features
+            </h1>
+            <span class="features__text"
+              >Some of the features and advantages that we provide for those of
+              you who store data in this Data Warehouse.</span
+            >
+          </div>
+          <div class="features__content">
+            <div class="features__content-block">
+              <img
+                class="features__content-block-left-picture_1"
+                src="assets/images/features-left-image.png"
+                alt="left-image"
+              />
+              <div
+                class="features__content-block-left features__content-block-left-bg_1 features__content-block-left-padding"
+              >
+                <img
+                  class="features__content-block-left-absolute"
+                  src="assets/images/features-absolute-image.png"
+                  alt="left-image"
+                />
+                <span class="features__content-block-left-caption"
+                  >Search Data</span
+                >
+                <span class="features__content-block-left-text"
+                  >Don’t worry if your data is very large, the Data Warehoue
+                  provides a search engine, which is useful for making it easier
+                  to find data effectively saving time.</span
+                >
+                <span class="features__content-block-left-svg"
+                  ><span>Learn more</span>
+                  <svg class="features__content-block-left-icon">
+                    <use
+                      xlink:href="assets/images/sprite.svg#features__svg"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="features__content-block">
+              <img
+                class="features__content-block-left-picture_2"
+                src="assets/images/features-right-image.png"
+                alt="left-image"
+              />
+              <div
+                class="features__content-block-left features__content-block-left-bg_2 features__content-block-left-padding"
+              >
+                <img
+                  class="features__content-block-left-absolute_1"
+                  src="assets/images/features-absolute-image_1.png"
+                  alt="left-image"
+                />
+                <span class="features__content-block-left-caption"
+                  >24 Hours Access</span
+                >
+                <span class="features__content-block-left-text"
+                  >Access is given 24 hours a full morning to night and meet
+                  again in the morning, giving you comfort when you need data
+                  when urgent.</span
+                >
+                <span class="features__content-block-left-svg"
+                  ><span><a href="#">Learn more</a></span>
+                  <svg class="features__content-block-left-icon">
+                    <use
+                      xlink:href="assets/images/sprite.svg#features__svg"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="features__content-block">
+              <img
+                class="features__content-block-left-picture_3"
+                src="assets/images/features-print-image.png"
+                alt="left-image"
+              />
+              <div
+                class="features__content-block-left features__content-block-left-bg_3 features__content-block-left-padding"
+              >
+                <img
+                  class="features__content-block-left-absolute_3"
+                  src="assets/images/features-absolute-image_3.png"
+                  alt="left-image"
+                />
+                <span class="features__content-block-left-caption"
+                  >Print Out</span
+                >
+                <span
+                  class="features__content-block-left-text features__content-block-left-text-padding-bottom"
+                  >Print out service gives you convenience if someday you need
+                  print data, just edit it all and just print it.</span
+                >
+                <span class="features__content-block-left-svg"
+                  ><span> <a href="#">Learn more</a></span>
+                  <svg class="features__content-block-left-icon">
+                    <use
+                      xlink:href="assets/images/sprite.svg#features__svg"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="features__content-block">
+              <img
+                class="features__content-block-left-picture_4"
+                src="assets/images/features-security-image.png"
+                alt="left-image"
+              />
+              <div
+                class="features__content-block-left features__content-block-left-bg_4 features__content-block-left-padding"
+              >
+                <img
+                  class="features__content-block-left-absolute_4"
+                  src="assets/images/features-absolute-image_4.png"
+                  alt="left-image"
+                />
+                <img
+                  class="features__content-block-left-absolute_5"
+                  src="assets/images/features-absolute-image_5.png"
+                  alt="left-image"
+                />
+                <span class="features__content-block-left-caption"
+                  >Security Code</span
+                >
+                <span class="features__content-block-left-text"
+                  >Data Security is one of our best facilities. Allows for your
+                  files to be safer. The file can be secured with a code or
+                  password that you created, so only you can open the
+                  file.</span
+                >
+                <span class="features__content-block-left-svg"
+                  ><span><a href="#">Learn more</a></span>
+                  <svg class="features__content-block-left-icon">
+                    <use
+                      xlink:href="assets/images/sprite.svg#features__svg"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials testimonials__margin">
+        <div class="testimonials__container testimonials__bg">
+          <div class="testimonials__content">
+            <div class="testimonials__caption testimonials__caption-padding">
+              <h2>Testimonials</h2>
+            </div>
+            <div class="testimonials__people">
+              <div
+                class="testimonials__people-left testimonials__people-left-padding"
+              >
+                <img
+                  class="testimonials__people-absolute"
+                  src="assets/images/testimonials_absolute_image_1.png"
+                  alt="absolute_image"
+                />
+                <div class="testimonials__people-text">
+                  <img
+                    class="testimonials__people-image-style"
+                    src="assets/images/testimonials_left-image.png"
+                    alt="left-image"
+                  />
+                  <div class="testimonials__people-text-block">
+                    <span>John Fang</span>
+                    <span
+                      ><a
+                        class="testimonials__people-text-link testimonials__people-text-link-padding"
+                        href="#"
+                        >wordfaang.com</a
+                      ></span
+                    >
+                    <div
+                      class="testimonials__people-bottom testimonials__people-bottom-padding"
+                    >
+                      <p>Suspendisse ultrices at diam lectus nullam.</p>
+                      <p>
+                        Nisl, sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="testimonials__people-right testimonials__people-left-padding"
+              >
+                <img
+                  class="testimonials__people-absolute-right"
+                  src="assets/images/testimonials_absolute_image_2.png"
+                  alt="absolute_image"
+                />
+                <div class="testimonials__people-text">
+                  <img
+                    class="testimonials__people-image-style"
+                    src="assets/images/testimonials_right-image.png"
+                    alt="left-image"
+                  />
+                  <div class="testimonials__people-text-block">
+                    <span>Hanna Wilson</span>
+                    <span
+                      ><a
+                        class="testimonials__people-text-link testimonials__people-text-link-padding"
+                        href="#"
+                        >wordfaang.com</a
+                      ></span
+                    >
+                    <div
+                      class="testimonials__people-bottom testimonials__people-bottom-padding"
+                    >
+                      <p>Suspendisse ultrices at diam lectus nullam.</p>
+                      <p>
+                        Nisl, sagittis viverra enim erat tortor ultricies massa
+                        turpis. Arcu pulvinar aenean nam laoreet nulla.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="footer__container footer__margin">
+          <div class="footer__content">
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <h2 class="footer__top-caption">Try for free!</h2>
+                <span class="footer__top-text"
+                  >Get limited 1 week free try our features!</span
+                >
+              </div>
+              <div class="footer__top-right">
+                <button type="submit" class="footer__button-style-learn">
+                  Learn more
+                </button>
+                <button
+                  type="submit"
+                  class="footer__button-style footer__button-style-padding"
+                >
+                  Request Demo
+                  <svg
+                    class="footer__arrows"
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="footer__arrows"
+                      d="M15 15L21 8L15 1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="footer__arrows"
+                      d="M21 8H1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="footer__bottom footer__bottom-margin">
+              <div class="footer__bottom-left">
+                <div class="footer__logo footer__logo-padding">
+                  <svg class="footer__logo_svg">
+                    <use
+                      xlink:href="assets/images/sprite.svg#header__logo"
+                    ></use>
+                  </svg>
+                  <span class="footer__logo-text">DataWarehouse</span>
+                </div>
+                <div class="footer__adress">
+                  <p>Warehouse Society, 234</p>
+                  <p>Bahagia Ave Street PRBW 29281</p>
+                </div>
+                <div class="footer__number">
+                  <span>1-232-3434 (Main)</span>
+                </div>
+                <div class="footer__reserved footer__reserved-padding">
+                  <p>© Datawarehouse™, 2020. All rights reserved.</p>
+                  <p>Company Registration Number: 21479524.</p>
+                </div>
+              </div>
+              <div class="footer__middle">
+                <div class="footer__middle-span footer__middle-span-margin">
+                  <span>About</span>
+                </div>
+                <div class="footer__middle-menu">
+                  <nav>
+                    <ul class="footer__middle-list">
+                      <li class="footer__middle-item">
+                        <a href="#">Profile</a>
+                      </li>
+                      <li class="footer__middle-item">
+                        <a href="#">Features</a>
+                      </li>
+                      <li class="footer__middle-item">
+                        <a href="#">Careers</a>
+                      </li>
+                      <li class="footer__middle-item">
+                        <a href="#">DW News</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="footer__middle">
+                <div class="footer__middle-span"><span>Help</span></div>
+                <div class="footer__middle-menu">
+                  <nav>
+                    <ul class="footer__middle-list">
+                      <li class="footer__middle-item">
+                        <a href="#">Support</a>
+                      </li>
+                      <li class="footer__middle-item">
+                        <a href="#">Sign up</a>
+                      </li>
+                      <li class="footer__middle-item"><a href="#">Guide</a></li>
+                      <li class="footer__middle-item">
+                        <a href="#">Reports</a>
+                      </li>
+                      <li class="footer__middle-item"><a href="#">Q&A</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="footer__right">
+                <div class="footer__right-span"><span>Social Media</span></div>
+                <div class="footer__right-menu">
+                  <nav>
+                    <ul class="footer__right-list">
+                      <li class="footer__right-item">
+                        <a
+                          class="footer__right-link"
+                          href="https://www.facebook.com/"
+                          ><svg
+                            class="footer__icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 50 50"
+                            style="fill: #ffffff"
+                          >
+                            <path
+                              d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"
+                            ></path>
+                            >
+                            <use
+                              class="footer__facebook"
+                              xlink:href="assets/images/sprite.svg#footer__facebook"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="footer__right-item">
+                        <a
+                          class="footer__right-link"
+                          href="https://twitter.com/"
+                          ><svg
+                            class="footer__icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 50 50"
+                            style="fill: #ffffff"
+                          >
+                            <path
+                              d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"
+                            ></path>
+                            >
+                            <use class="footer__twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="footer__right-item">
+                        <a
+                          class="footer__right-link"
+                          href="https://www.instagram.com/"
+                        >
+                          <svg
+                            class="footer__icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 50 50"
+                            style="fill: #ffffff"
+                          >
+                            <path
+                              d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                            ></path>
+                            >
+                            <use class="footer__instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
