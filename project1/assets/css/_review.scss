@@ -1,0 +1,53 @@
+.review {
+    background-image: url(/project1/assets/images/BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0 180px 0;
+    @media screen and(min-width:1920px) {
+        background-size: 100%;
+         }
+
+    @media screen and(max-width:$tablet) {
+
+        padding: 60px 0 120px 0;
+               }
+
+    &__container {
+        @include container;
+    }
+    &__wrapper {
+        @include flex-column;
+        gap: 60px;
+    }
+    &__h2{
+        text-align: center;
+        @include h2;
+    }
+    &__block{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @media screen and(max-width:$tablet) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+                   }
+    }
+    &__text{
+        background-color: $dark-grey;
+        padding:48px 60px;
+        @include flex-column;
+        gap: 10px;
+    }
+    &__h5{
+        @include h5;
+    }
+    &__svg-quote{
+        fill: $accent;
+        margin-right: 10px;
+    }
+    &__description-text{
+        @include subtext-grey;
+    }
+}

@@ -1,0 +1,94 @@
+steps {
+    background-color: $dark-grey;
+    padding: 112px 0 60px 0;
+    background-image: url(/project1/assets/images/Line.png);
+    background-repeat: no-repeat;
+    background-position: center 60px;
+
+    @media screen and(max-width:$desktop) {
+      padding: 127px 0 45px 0;
+      background-image: url(/project1/assets/images/Line-728.png);
+      background-position: center 74px;
+      }
+      @media screen and(max-width:$desktop-small) {
+        background-image: url(/project1/assets/images/Line-632.png);
+        background-position: center 84px;
+      }
+      @media screen and(max-width:960px) {
+        background-position: center 92px;
+      }
+      @media screen and(max-width:$tablet) {
+      background-image: none;
+      padding: 60px;
+        }
+
+    &__container {
+        @include container;
+    }
+
+    &__wrapper {
+        background-color: $dark-grey;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack:justify;
+            -ms-flex-pack:justify;
+                justify-content:space-between ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        @media screen and(max-width:$tablet) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          gap: 60px;
+              }
+    }
+
+    &__item {
+        width: 32%;
+        padding: 7px 0 0 0;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        text-align: center;
+
+        @media screen and(max-width:$desktop) {
+              width: 31.2%;
+            }
+            @media screen and(max-width:960px) {
+               padding:16px 0;
+              }
+              @media screen and(max-width:$tablet) {
+                width: 100%;
+                       }
+
+    }
+    &__item--middle{
+      padding-left: 5px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $white;
+
+
+
+    }
+    &__svg--darker {
+        fill: $accent-darker;
+    }
+    &__svg--red {
+        fill: $red;
+    }
+    &__svg--blue {
+        fill: $blue;
+    }
+}
