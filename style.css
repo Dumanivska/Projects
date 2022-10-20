@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container .btn {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: #f1f1f1; */
+  /* color: black; */
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  /* border-radius: 5px; */
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #71b496;
+  text-align: center;
+  /* border: none; */
+  border-color: azure;
+  border-radius: 15px;
+  box-shadow: 0 9px azure;
+}
+.btn1 {
+  position: relative;
+  top: -570px;
+  left: 90px;
+}
+
+.btn2 {
+  position: relative;
+  top: -500px;
+  left: 300px;
+}
+.btn :hover {
+  background-color: rgb(34, 121, 111);
+}
+
+.btn :active {
+  background-color: rgb(34, 121, 111);
+  box-shadow: 0 5px aquamarine;
+  transform: translateY(4px);
+}
+.text {
+  color: azure;
+  text-decoration-line: none;
+  font-family: "Paprika", cursive;
+}
