@@ -224,17 +224,19 @@
     fill: #3b5998;
     background-color: white;
   }
+
+  &__right-item &__right-link_twitter:hover {
+    outline: 1px solid #00acee;
+  }
+  &__right-item &__right-link_twitter:hover &__icon {
+    fill: #00acee;
+    background-color: white;
+  }
   &__right-item &__right-link_instagram:hover {
     outline: 1px solid #c13584;
   }
   &__right-item &__right-link_instagram:hover &__icon {
     fill: #c13584;
     background-color: white;
-  }
-  &__right-item &__right-link:hover {
-    outline: 1px solid #00acee;
-  }
-  &__right-item:hover {
-    border-color: #00acee;
   }
 }
