@@ -1,6 +1,9 @@
 .data{
     &__container{
         @extend .container;
+        @include media('1024px'){
+            flex-direction: column;
+      } 
     }
     &__content{
         display: flex;
@@ -48,15 +51,25 @@
         &-absolute{
             position: absolute;
             top:0px;
+            @include media('1024px'){
+                position: relative;
+          }
         }
         &-right{
             width: 68%;
             margin-top: 82px;
+            @include media('1024px'){
+                margin-top: 0px;
+                width: 100%;
+          } 
         }
         &-image{
             &-style{
                 max-width: 770px;
                 width: 100%;
+                @include media('1024px'){
+                    max-height: 407px;
+              } 
             }
         }
     }
