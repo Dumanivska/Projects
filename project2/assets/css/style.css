@@ -43,6 +43,7 @@
     align-items: center;
     -moz-column-gap: 30px;
          column-gap: 30px;
+    transition: all 0.3s ease;
   }
 }
 @media (max-width: 992px) and (max-width: 992px) {
@@ -141,10 +142,12 @@ svg path {
 .header__menu-item a:hover {
   color: #8a40ee;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .header__menu-item a:active {
   color: #8a40ee;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .header__button {
   display: flex;
@@ -167,6 +170,7 @@ svg path {
   background-color: rgb(138, 64, 238);
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
 }
 .header__button-style-padding {
   padding-left: 23px;
@@ -176,11 +180,13 @@ svg path {
 }
 .header__button-style:hover .header__arrows {
   stroke: #ffffff;
+  transition: all 0.2s linear;
 }
 .header__arrows {
   margin-left: 20px;
   margin-right: 23px;
   stroke: #9c69e2;
+  transition: all 0.2s linear;
 }
 .header__burger {
   display: flex;
@@ -277,6 +283,7 @@ svg path {
   background-color: rgb(138, 64, 238);
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
 }
 .data__content-absolute {
   position: absolute;
@@ -438,6 +445,7 @@ svg path {
   border-radius: 50px;
   z-index: 10;
   max-height: 400px;
+  transition: all 0.2s linear;
 }
 .features__content-block-left-bg_1 {
   background-color: rgb(240, 250, 249);
@@ -846,6 +854,7 @@ svg path {
 }
 .footer-style:hover .footer__arrows {
   stroke: #ffffff;
+  transition: all 0.3s linear;
 }
 .footer__button-style {
   background-color: #ffffff;
@@ -860,6 +869,7 @@ svg path {
   border: 1px solid #9c69e2;
   border-radius: 50px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  transition: all 0.3s ease;
 }
 .footer__button-style-learn {
   display: flex;
@@ -884,14 +894,19 @@ svg path {
   background-color: #eb4bab;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
 }
 .footer__button-style:hover {
   background-color: #9c69e2;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .footer__button-style:hover .footer__arrows {
   stroke: #ffffff;
+  transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
 .footer__button-style-padding {
   padding-left: 23px;
@@ -1047,6 +1062,7 @@ svg path {
 }
 .footer__icon:hover {
   fill: #00acee;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link:hover .footer__icon {
   fill: #00acee;
@@ -1054,22 +1070,28 @@ svg path {
 }
 .footer__right-item .footer__right-link_facebook:hover {
   outline: 1px solid #3b5998;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link_facebook:hover .footer__icon {
   fill: #3b5998;
   background-color: white;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link_twitter:hover {
   outline: 1px solid #00acee;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link_twitter:hover .footer__icon {
   fill: #00acee;
   background-color: white;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link_instagram:hover {
   outline: 1px solid #c13584;
+  transition: all 0.3s ease;
 }
 .footer__right-item .footer__right-link_instagram:hover .footer__icon {
   fill: #c13584;
   background-color: white;
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@
         border-radius: 50px;
         z-index: 10;
         max-height: 400px;
-
+        transition: all 0.2s linear;
         &-bg_1 {
           background-color: rgba(240, 250, 249, 1);
         }
@@ -120,9 +120,11 @@
             max-height: 12px;
           }
         }
+
         &-caption {
           @include font-Work-sans-400-24;
           z-index: 11;
+
           @include media("611px") {
             font-size: 1.2em;
           }

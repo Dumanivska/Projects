@@ -43,6 +43,7 @@
       display: flex;
       align-items: center;
       column-gap: 30px;
+      transition: all 0.3s ease;
       &-style {
         &-padding {
           @include media("992px") {

@@ -37,10 +37,12 @@
     &-item a:hover {
       color: #8a40ee;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
     &-item a:active {
       color: #8a40ee;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
   }
   &__button {
@@ -58,6 +60,7 @@
         background-color: rgba(138, 64, 238, 1);
         cursor: pointer;
         color: #ffffff;
+        transition: all 0.3s ease;
       }
 
       &-padding {
@@ -69,12 +72,16 @@
     }
     &-style:hover .header__arrows {
       stroke: #ffffff;
+
+      transition: all 0.2s linear;
     }
   }
   &__arrows {
     margin-left: 20px;
     margin-right: 23px;
     stroke: #9c69e2;
+
+    transition: all 0.2s linear;
   }
   &__burger {
     display: flex;
