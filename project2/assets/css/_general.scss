@@ -1,28 +1,30 @@
-body{
+body {
   font-size: 16px;
 }
-h1,h2{
+h1,
+h2 {
   margin: 0px;
   padding: 0px;
 }
-.container{
+.container {
   max-width: 1170px;
   margin: 0px auto;
   width: 90%;
 }
-a{
+a {
   text-decoration: none;
-  color: #4B5D68;
+  color: #4b5d68;
 }
-*, *::before, *::after{
-	box-sizing: border-box;
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
 }
-#footer__facebook{
+#footer__facebook {
   display: flex;
   justify-content: center;
   align-items: center;
