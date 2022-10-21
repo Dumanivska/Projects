@@ -342,6 +342,9 @@ svg path {
   padding-top: 35px;
 }
 
+.features__container {
+  width: 85%;
+}
 .features__padding {
   padding-top: 120px;
 }
@@ -374,7 +377,6 @@ svg path {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 50px 30px;
-  overflow: hidden;
 }
 .features__content-block {
   display: flex;
@@ -390,6 +392,7 @@ svg path {
   row-gap: 20px;
   border-radius: 50px;
   z-index: 10;
+  max-height: 400px;
 }
 .features__content-block-left-bg_1 {
   background-color: rgb(240, 250, 249);
@@ -430,7 +433,7 @@ svg path {
   max-width: 241px;
   max-height: 180px;
   z-index: 11;
-  margin-right: -60px;
+  margin-right: -70px;
 }
 .features__content-block-left-picture_3 {
   max-width: 245px;
@@ -518,7 +521,6 @@ svg path {
   color: #4B5D68;
   z-index: 10;
   max-width: 230px;
-  max-height: 180px;
 }
 .features__content-block-left-padding {
   padding-left: 100px;
@@ -666,6 +668,9 @@ svg path {
   padding-bottom: 19px;
 }
 
+.footer__container {
+  margin-bottom: 120px;
+}
 .footer__margin {
   margin-top: 120px;
 }
@@ -767,6 +772,7 @@ svg path {
 .footer__bottom {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .footer__bottom-margin {
   margin-top: 100px;
@@ -914,6 +920,20 @@ svg path {
 }
 .footer__right-item .footer__right-link:hover .footer__icon {
   fill: #00ACEE;
+  background-color: white;
+}
+.footer__right-item .footer__right-link_facebook:hover {
+  outline: 1px solid #3B5998;
+}
+.footer__right-item .footer__right-link_facebook:hover .footer__icon {
+  fill: #3B5998;
+  background-color: white;
+}
+.footer__right-item .footer__right-link_instagram:hover {
+  outline: 1px solid #C13584;
+}
+.footer__right-item .footer__right-link_instagram:hover .footer__icon {
+  fill: #C13584;
   background-color: white;
 }
 .footer__right-item .footer__right-link:hover {
