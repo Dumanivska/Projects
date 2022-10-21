@@ -231,6 +231,7 @@ svg path {
 @media (max-width: 1024px) {
   .data__container {
     flex-direction: column;
+    max-height: 407px;
   }
 }
 .data__content {
@@ -239,6 +240,11 @@ svg path {
   -moz-column-gap: 31px;
        column-gap: 31px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .data__content {
+    max-height: 407px;
+  }
 }
 .data__content-left {
   width: 32%;
@@ -918,6 +924,11 @@ svg path {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 915px) {
+  .footer__bottom {
+    flex-direction: column;
+  }
 }
 .footer__bottom-margin {
   margin-top: 100px;
