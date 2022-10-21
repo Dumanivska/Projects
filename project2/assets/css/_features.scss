@@ -10,9 +10,11 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 80px;
+    
         }
     &__caption{
         @include font-Work-sans-700-40;
+        margin-bottom: 50px;
        
     }
     &__text{
@@ -41,16 +43,16 @@
                 z-index: 10;
 
                 &-bg_1{
-                    background-color: #F0FAF9;
+                    background-color: rgba(240, 250, 249, 1);
                 }
                 &-bg_2{
-                    background-color:#F6F0FD;
+                    background-color:rgba(246, 240, 253, 1);
                 }
                 &-bg_3{
-                    background-color:#FEF0F8;
+                    background-color: rgba(254, 240, 248, 1);
                 }
                 &-bg_4{
-                    background-color:#EAF6FC;
+                    background-color: rgba(234, 246, 252, 1);
                 }
                 &-svg{
                     @include font-Montserrat-700-16;

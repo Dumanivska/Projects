@@ -264,7 +264,7 @@ svg path {
   display: flex;
   min-width: 210px;
   min-height: 60px;
-  border: 1px solid #9C69E2;
+  border: 0px solid #9C69E2;
   border-radius: 50px;
   color: #FFFFFF;
   background-color: rgb(156, 105, 226);
@@ -294,7 +294,7 @@ svg path {
 }
 
 .who_we_are__bg {
-  background-color: #FDE8F5;
+  background-color: rgb(253, 232, 245);
   border-radius: 50px;
 }
 .who_we_are__padding {
@@ -358,6 +358,7 @@ svg path {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 50px;
 }
 .features__text {
   max-width: 605px;
@@ -391,16 +392,16 @@ svg path {
   z-index: 10;
 }
 .features__content-block-left-bg_1 {
-  background-color: #F0FAF9;
+  background-color: rgb(240, 250, 249);
 }
 .features__content-block-left-bg_2 {
-  background-color: #F6F0FD;
+  background-color: rgb(246, 240, 253);
 }
 .features__content-block-left-bg_3 {
-  background-color: #FEF0F8;
+  background-color: rgb(254, 240, 248);
 }
 .features__content-block-left-bg_4 {
-  background-color: #EAF6FC;
+  background-color: rgb(234, 246, 252);
 }
 .features__content-block-left-svg {
   font-family: "Montserrat";
@@ -536,7 +537,7 @@ svg path {
 }
 
 .testimonials__bg {
-  background-color: #CCDDFF;
+  background-color: rgb(204, 221, 255);
   border-radius: 50px;
   border: 1px solid #9C69E2;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -738,7 +739,7 @@ svg path {
   background-color: #F063B8;
   color: #FFFFFF;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  border: 1px solid #9C69E2;
+  border: 0px solid #9C69E2;
   border-radius: 50px;
   min-height: 60px;
   padding-left: 52px;

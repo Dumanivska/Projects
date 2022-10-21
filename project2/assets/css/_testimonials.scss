@@ -3,7 +3,8 @@
         @extend .container;
     }
     &__bg{
-        background-color: #CCDDFF;
+        // background-color: #CCDDFF;
+        background-color: rgba(204, 221, 255, 1);
         border-radius: 50px;
         border: 1px solid #9C69E2;
         box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
