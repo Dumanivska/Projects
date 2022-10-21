@@ -46,13 +46,18 @@
 .btn1 {
   position: relative;
   top: -570px;
-  left: 90px;
+  left: 110px;
 }
 
 .btn2 {
   position: relative;
   top: -500px;
   left: 300px;
+}
+.btn3 {
+  position: relative;
+  top: -446px;
+  left: 110px;
 }
 .btn :hover {
   background-color: rgb(34, 121, 111);
