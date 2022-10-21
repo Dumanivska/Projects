@@ -1,0 +1,120 @@
+.menu {
+	@media screen and (max-width: $tablet) {
+		display: none;
+	}
+
+	&__list {
+		list-style: none;
+		gap: 3rem;
+        @include flexCenter;
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+            height: 3px;
+			top: 100%;
+			right: 0;
+			position: absolute;
+            content: '';
+			background: linear-gradient(
+				96.73deg,
+				#53f3cd 6.73%,
+				rgba(83, 243, 205, 0) 116.9%
+			);
+			opacity: 0.3;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.08em;
+		text-decoration: none;
+        @include lato-400;
+		@include color($darkHeaderMenu);
+	}
+}
+
+.burger {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	transform: scale(0);
+    @include container;
+	&__nav {
+        width: max-content;
+		height: max-content;
+		display: flex;
+		position: absolute;
+        right: 0;
+		top: 80px;
+		z-index: 5;
+		background: linear-gradient(
+				270deg,
+				rgba(22, 25, 38, 0.5) 0%,
+				rgba(22, 25, 38, 0) 24.1%,
+				rgba(22, 25, 38, 0) 47.19%
+			),
+			rgba(22, 25, 38, 0.02);
+		backdrop-filter: blur(4.5px);
+	}
+
+	&__list {
+        margin: 10px;
+        gap: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		list-style: none;
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+            width: 0;
+            height: 3px;
+            top: 100%;
+			right: 0;
+			position: absolute;
+			content: '';
+			background: linear-gradient(
+				96.73deg,
+				#53f3cd 6.73%,
+				rgba(83, 243, 205, 0) 116.9%
+			);
+			opacity: 0.3;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.08em;
+		text-decoration: none;
+        @include lato-400;
+		@include color($darkHeaderMenu);
+	}
+}
+
+.header__burger-switch {
+	&:checked {
+		& ~ .body__all > .header > .burger {
+			transform: scale(1);
+			@media screen and (min-width: 901px) {
+				transform: scale(0);
+			}
+		}
+	}
+}

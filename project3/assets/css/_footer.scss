@@ -1,0 +1,43 @@
+.footer {
+	&__container {
+		@include container;
+	}
+
+	&__wrapper {
+        padding: 3rem 0;
+		justify-content: space-between;
+		border-top: 1px solid $darkBorder;
+        @include flexCenter;
+		@media screen and (max-width: $tablet) {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		line-height: 186%;
+        @include lato-300;
+		@include color($darkText);
+		opacity: 0.6;
+	}
+
+	&__link {
+		text-decoration: none;
+		font-size: 1.4rem;
+		line-height: 171%;
+		letter-spacing: 0.08em;
+        @include lato-400;
+		@include color($darkText);
+	}
+
+	&__middle {
+        gap: 1.2rem;
+		@include flexCenter;
+	}
+
+	&__right {
+        gap: 3.2rem;
+		@include flexCenter;
+	}
+}
