@@ -1,0 +1,191 @@
+.latest-news {
+  padding: 120px 0 130px 0;
+  background-image: url(../images/bg__latest.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include phone-xs() {
+    padding-top: 80px;
+  }
+  &__container {
+    @include container;
+    @media only screen and (max-width: 1400px) {
+      max-width: 815px;
+    }
+    @media only screen and (max-width: 1150px) {
+      max-width: 694px;
+    }
+    @media only screen and (max-width: 864px) {
+      max-width: 642px;
+    }
+    @media only screen and (max-width: 755px) {
+      max-width: 382px;
+    }
+    @include phone {
+      max-width: 340px;
+    }
+  }
+  &__h2 {
+    @include title;
+    color: $white;
+    text-align: center;
+    margin-bottom: 90px;
+    @include devider-white;
+    @include phone-xs {
+      margin-bottom: 35px;
+    }
+  }
+  &__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .slider {
+      &__item {
+        max-width: 100vw;
+      }
+      &__item + .slider__item {
+        margin-left: 30px;
+      }
+      &__img {
+        .img {
+          &__item {
+            width: 100%;
+          }
+        }
+      }
+      &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 515px;
+        max-width: 370px;
+        width: 100%;
+        background-color: $white;
+        @media only screen and (max-width: 1400px) {
+          width: 420px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+          max-width: 328px;
+        }
+
+        @include tablet {
+          max-width: 300px;
+        }
+        @media only screen and (max-width: 755px) {
+          max-width: 370px;
+        }
+        @include phone {
+          max-width: 350px;
+        }
+      }
+      &__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        .content {
+          &__title {
+            @include title-article;
+            margin-bottom: 15px;
+          }
+          &__description {
+            @include description-article;
+          }
+        }
+      }
+      &__author {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 20px;
+        .author {
+          &__img {
+            border-radius: 50%;
+          }
+          &__name {
+            @include author-name;
+            margin-bottom: 6px;
+          }
+          &__date {
+            @include author-date;
+          }
+        }
+      }
+    }
+  }
+}
+.slick-next:before {
+  content: url(../images/right.webp);
+  padding: 10px 20px 15px 20px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  @include phone {
+    display: none;
+  }
+}
+.slick-prev:before {
+  content: url(../images/left.webp);
+  padding: 10px 20px 15px 20px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  @include phone {
+    display: none;
+  }
+}
+.slick-prev {
+  left: -85px;
+  @media only screen and (max-width: 810px) {
+    left: -61px;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.slick-next {
+  right: -40px;
+  @media only screen and (max-width: 810px) {
+    right: -15px;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.slick-dots {
+  bottom: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 40px;
+}
+.slick-dots li button {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+  width: 10px;
+  height: 10px;
+}
+.slick-dots li button::before,
+.slick-dots li.slick-active button::before {
+  opacity: 0;
+  color: transparent;
+}
+.slick-dots li.slick-active button {
+  background: $white;
+}

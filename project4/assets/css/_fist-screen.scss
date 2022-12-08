@@ -1,0 +1,189 @@
+.fist-screen {
+  overflow: hidden;
+  position: relative;
+  background: center / cover no-repeat url(../images/Mask\ Group.webp),
+    -o-linear-gradient(206.57deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  background: center / cover no-repeat url(../images/Mask\ Group.webp),
+    linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+
+  // &::after {
+  //     content: '';
+  //     z-index: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     left: 0;
+  //     top: 0;
+  //     position: absolute;
+  //     background-image: url(../images/Mask\ Group.png);
+  //     background-repeat: no-repeat;
+  // }
+  &__container {
+    @include container;
+    @include desktop-xl {
+      max-width: 1050px;
+    }
+    @include desktop {
+      max-width: 1000px;
+    }
+    @include phone {
+      max-width: 90%;
+    }
+    @include phone-xs() {
+      max-width: 95%;
+    }
+  }
+  &__slider {
+    padding-top: 223px;
+    padding-bottom: 150px;
+    @include tablet {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+    @include phone {
+      padding-top: 110px;
+      padding-bottom: 100px;
+    }
+    .slider {
+      &__block {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+  &__h1 {
+    text-align: center;
+    @include h1;
+    margin-bottom: 20px;
+    @include desktop-xl {
+      font-size: 64px;
+    }
+    @include tablet {
+      font-size: 42px;
+    }
+    @include phone {
+      font-size: 32px;
+    }
+    @include phone-xs() {
+      font-size: 26px;
+      margin-bottom: 5px;
+    }
+  }
+  &__subtext {
+    font-family: $monserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+    color: $white;
+    text-align: center;
+    @include phone {
+      font-size: 14px;
+    }
+    @include phone-xs() {
+      font-size: 12px;
+    }
+  }
+  &__scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  &__arrow {
+    cursor: pointer;
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    -webkit-transition: border 1s linear, fill 0.5s ease,
+      background-color 1s linear;
+    -o-transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
+    transition: border 1s linear, fill 0.5s ease, background-color 1s linear;
+
+    @include phone {
+      display: none;
+    }
+  }
+  &__arrow-svg {
+    -webkit-animation: animate_fading 1.5s infinite;
+    animation: animate_fading 1.5s infinite;
+
+    @-webkit-keyframes animate_fading {
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.1;
+      }
+      75% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes animate_fading {
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.1;
+      }
+      75% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .slick-prev,
+  .slick-next,
+  .slick-next::before,
+  .slick-prev::before {
+    display: none;
+  }
+  .slick-dots li button::before,
+  .slick-dots li.slick-active button::before {
+    opacity: 0;
+  }
+  .slick-dots {
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    top: 10%;
+    right: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    @include tablet {
+      visibility: hidden;
+    }
+  }
+}
