@@ -274,7 +274,7 @@ svg path {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.6em;
   letter-spacing: 0.005em;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   display: flex;
@@ -885,7 +885,7 @@ svg path {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.6em;
   letter-spacing: 0.005em;
   background-color: #f063b8;
   color: #ffffff;
@@ -893,8 +893,8 @@ svg path {
   border: 0px solid #9c69e2;
   border-radius: 50px;
   min-height: 60px;
-  padding-left: 52px;
-  padding-right: 52px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .footer__button-style-learn:hover {
   background-color: #eb4bab;

@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <title>Project2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://allfont.ru/allfont.css?fonts=jakobctt-bold&subset=cyrillic-ext"
-      rel="stylesheet"
-      type="text/css"
-    />
+
+
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Work+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      type="image/x-icon"
-      href="assets/images/favicon.ico"
-      rel="shortcut icon"
-    />
+
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Work+Sans:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Work+Sans:wght@400;700&display=swap"></noscript>
+
+
+
+
+    <link type="image/x-icon"
+          href="assets/images/favicon.ico"
+          rel="shortcut icon" />
     <link type="Image/x-icon" href="assets/images/favicon.ico" rel="icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/images/apple-touch-icon.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/images/favicon-32x32.png" />
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="assets/images/favicon-16x16.png" />
+</head>
   <body class="body">
     <header class="header">
       <div class="header__container">
@@ -140,15 +134,16 @@
               </div>
             </div>
             <div class="data__content-right">
-              <div class="data__content-image">
-                <img
-                  class="datae__content-image-style"
-                  width="770"
-                  height="407"
-                  src="assets/images/data__image.png"
-                  alt="data__image"
-                />
-              </div>
+                <div class="data__content-image">
+                    <picture class="datae__content-image-style">
+                        <source type="image/webp" srcset="assets/images/data__image.webp" width="770" height="407" alt="data__image">
+                        <source type="image/png" srcset="assets/images/data__image.png" width="770" height="407" alt="data__image">
+                        <img width="770"
+                             height="407"
+                             src="assets/images/data__image.png"
+                             alt="data__image" />
+                    </picture>
+                </div>
             </div>
           </div>
         </div>
@@ -156,17 +151,14 @@
       <section id="who_we_are" class="who_we_are">
         <div class="who_we_are__container who_we_are__bg who_we_are__padding">
           <div class="who_we_are__content who_we_are__content-padding">
-            <div
-              class="who_we_are__content-left who_we_are__content-left-padding"
-            >
-              <img
-                class="who_we_are__content-left-image"
-                src="assets/images/who_we_are_image.png"
-                width="400"
-                height="410"
-                alt="who_we_are_image"
-              />
-            </div>
+              <div class="who_we_are__content-left who_we_are__content-left-padding">
+
+                  <picture class="who_we_are__content-left-image">
+                      <source type="image/webp" srcset="assets/images/who_we_are_image.webp"  width="400" height="410" alt="who_we_are_image" >
+                      <source type="image/png" srcset="assets/images/who_we_are_image.png" width="400" height="410" alt="who_we_are_image" >
+                      <img src="assets/images/who_we_are_image.png" width="400" height="410" alt="who_we_are_image" >
+                  </picture>
+              </div>
             <div
               class="who_we_are__content-right who_we_are__content-right-padding"
             >
@@ -202,140 +194,115 @@
             >
           </div>
           <div class="features__content">
-            <div class="features__content-block">
-              <img
-                class="features__content-block-left-picture_1"
-                src="assets/images/features-left-image.png"
-                alt="left-image"
-              />
-              <div
-                class="features__content-block-left features__content-block-left-bg_1 features__content-block-left-padding"
-              >
-                <img
-                  class="features__content-block-left-absolute"
-                  src="assets/images/features-absolute-image.png"
-                  alt="left-image"
-                />
-                <span class="features__content-block-left-caption"
-                  >Search Data</span
-                >
-                <span class="features__content-block-left-text"
-                  >Don’t worry if your data is very large, the Data Warehoue
-                  provides a search engine, which is useful for making it easier
-                  to find data effectively saving time.</span
-                >
-                <span class="features__content-block-left-svg"
-                  ><span>Learn more</span>
-                  <svg class="features__content-block-left-icon">
-                    <use
-                      xlink:href="assets/images/sprite.svg#features__svg"
-                    ></use>
-                  </svg>
-                </span>
+              <div class="features__content-block">
+
+                  <picture class="features__content-block-left-picture_1">
+                      <source type="image/webp" srcset="assets/images/features-left-image.webp" alt="left-image" >
+                      <source type="image/png" srcset="assets/images/features-left-image.png" alt="left-image" >
+                      <img src="flower.jpg" alt="left-image" >
+                  </picture>
+
+                  <div class="features__content-block-left features__content-block-left-bg_1 features__content-block-left-padding">
+                      <img class="features__content-block-left-absolute"
+                           src="assets/images/features-absolute-image.png"
+                           alt="left-image" />
+                      <span class="features__content-block-left-caption">Search Data</span>
+                      <span class="features__content-block-left-text">
+                          Don’t worry if your data is very large, the Data Warehoue
+                          provides a search engine, which is useful for making it easier
+                          to find data effectively saving time.
+                      </span>
+                      <span class="features__content-block-left-svg">
+                          <span>Learn more</span>
+                          <svg class="features__content-block-left-icon">
+                              <use xlink:href="assets/images/sprite.svg#features__svg"></use>
+                          </svg>
+                      </span>
+                  </div>
               </div>
-            </div>
-            <div class="features__content-block">
-              <img
-                class="features__content-block-left-picture_2"
-                src="assets/images/features-right-image.png"
-                alt="left-image"
-              />
-              <div
-                class="features__content-block-left features__content-block-left-bg_2 features__content-block-left-padding"
-              >
-                <img
-                  class="features__content-block-left-absolute_1"
-                  src="assets/images/features-absolute-image_1.png"
-                  alt="left-image"
-                />
-                <span class="features__content-block-left-caption"
-                  >24 Hours Access</span
-                >
-                <span class="features__content-block-left-text"
-                  >Access is given 24 hours a full morning to night and meet
-                  again in the morning, giving you comfort when you need data
-                  when urgent.</span
-                >
-                <span class="features__content-block-left-svg"
-                  ><span><a href="#">Learn more</a></span>
-                  <svg class="features__content-block-left-icon">
-                    <use
-                      xlink:href="assets/images/sprite.svg#features__svg"
-                    ></use>
-                  </svg>
-                </span>
+              <div class="features__content-block">
+
+
+                  <picture class="features__content-block-left-picture_2">
+                      <source type="image/webp" srcset="assets/images/features-right-image.webp" alt="left-image">
+                      <source type="image/png" srcset="assets/images/features-right-image.png" alt="left-image">
+                      <img src="flower.jpg" alt="left-image">
+                  </picture>
+
+
+                  <div class="features__content-block-left features__content-block-left-bg_2 features__content-block-left-padding">
+                      <img class="features__content-block-left-absolute_1"
+                           src="assets/images/features-absolute-image_1.png"
+                           alt="left-image" />
+                      <span class="features__content-block-left-caption">24 Hours Access</span>
+                      <span class="features__content-block-left-text">
+                          Access is given 24 hours a full morning to night and meet
+                          again in the morning, giving you comfort when you need data
+                          when urgent.
+                      </span>
+                      <span class="features__content-block-left-svg">
+                          <span><a href="#">Learn more</a></span>
+                          <svg class="features__content-block-left-icon">
+                              <use xlink:href="assets/images/sprite.svg#features__svg"></use>
+                          </svg>
+                      </span>
+                  </div>
               </div>
-            </div>
-            <div class="features__content-block">
-              <img
-                class="features__content-block-left-picture_3"
-                src="assets/images/features-print-image.png"
-                alt="left-image"
-              />
-              <div
-                class="features__content-block-left features__content-block-left-bg_3 features__content-block-left-padding"
-              >
-                <img
-                  class="features__content-block-left-absolute_3"
-                  src="assets/images/features-absolute-image_3.png"
-                  alt="left-image"
-                />
-                <span class="features__content-block-left-caption"
-                  >Print Out</span
-                >
-                <span
-                  class="features__content-block-left-text features__content-block-left-text-padding-bottom"
-                  >Print out service gives you convenience if someday you need
-                  print data, just edit it all and just print it.</span
-                >
-                <span class="features__content-block-left-svg"
-                  ><span> <a href="#">Learn more</a></span>
-                  <svg class="features__content-block-left-icon">
-                    <use
-                      xlink:href="assets/images/sprite.svg#features__svg"
-                    ></use>
-                  </svg>
-                </span>
+              <div class="features__content-block">
+
+                  <picture class="features__content-block-left-picture_3">
+                      <source type="image/webp" srcset="assets/images/features-print-image.webp" alt="left-image">
+                      <source type="image/png" srcset="assets/images/features-print-image.png" alt="left-image">
+                      <img src="assets/images/features-print-image.png" alt="left-image">
+                  </picture>
+
+                  <div class="features__content-block-left features__content-block-left-bg_3 features__content-block-left-padding">
+                      <img class="features__content-block-left-absolute_3"
+                           src="assets/images/features-absolute-image_3.png"
+                           alt="left-image" />
+                      <span class="features__content-block-left-caption">Print Out</span>
+                      <span class="features__content-block-left-text features__content-block-left-text-padding-bottom">
+                          Print out service gives you convenience if someday you need
+                          print data, just edit it all and just print it.
+                      </span>
+                      <span class="features__content-block-left-svg">
+                          <span> <a href="#">Learn more</a></span>
+                          <svg class="features__content-block-left-icon">
+                              <use xlink:href="assets/images/sprite.svg#features__svg"></use>
+                          </svg>
+                      </span>
+                  </div>
               </div>
-            </div>
-            <div class="features__content-block">
-              <img
-                class="features__content-block-left-picture_4"
-                src="assets/images/features-security-image.png"
-                alt="left-image"
-              />
-              <div
-                class="features__content-block-left features__content-block-left-bg_4 features__content-block-left-padding"
-              >
-                <img
-                  class="features__content-block-left-absolute_4"
-                  src="assets/images/features-absolute-image_4.png"
-                  alt="left-image"
-                />
-                <img
-                  class="features__content-block-left-absolute_5"
-                  src="assets/images/features-absolute-image_5.png"
-                  alt="left-image"
-                />
-                <span class="features__content-block-left-caption"
-                  >Security Code</span
-                >
-                <span class="features__content-block-left-text"
-                  >Data Security is one of our best facilities. Allows for your
-                  files to be safer. The file can be secured with a code or
-                  password that you created, so only you can open the
-                  file.</span
-                >
-                <span class="features__content-block-left-svg"
-                  ><span><a href="#">Learn more</a></span>
-                  <svg class="features__content-block-left-icon">
-                    <use
-                      xlink:href="assets/images/sprite.svg#features__svg"
-                    ></use>
-                  </svg>
-                </span>
+              <div class="features__content-block">
+
+                  <picture class="features__content-block-left-picture_4" >
+                      <source type="image/webp" srcset="assets/images/features-security-image.webp" alt="left-image">
+                      <source type="image/png" srcset="assets/images/features-security-image.png" alt="left-image">
+                      <img src="assets/images/features-security-image.png" alt="left-image">
+                  </picture>
+
+                  <div class="features__content-block-left features__content-block-left-bg_4 features__content-block-left-padding">
+                      <img class="features__content-block-left-absolute_4"
+                           src="assets/images/features-absolute-image_4.png"
+                           alt="left-image" />
+                      <img class="features__content-block-left-absolute_5"
+                           src="assets/images/features-absolute-image_5.png"
+                           alt="left-image" />
+                      <span class="features__content-block-left-caption">Security Code</span>
+                      <span class="features__content-block-left-text">
+                          Data Security is one of our best facilities. Allows for your
+                          files to be safer. The file can be secured with a code or
+                          password that you created, so only you can open the
+                          file.
+                      </span>
+                      <span class="features__content-block-left-svg">
+                          <span><a href="#">Learn more</a></span>
+                          <svg class="features__content-block-left-icon">
+                              <use xlink:href="assets/images/sprite.svg#features__svg"></use>
+                          </svg>
+                      </span>
+                  </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -390,30 +357,27 @@
                   alt="absolute_image"
                 />
                 <div class="testimonials__people-text">
-                  <img
-                    class="testimonials__people-image-style"
-                    src="assets/images/testimonials_right-image.png"
-                    alt="left-image"
-                  />
-                  <div class="testimonials__people-text-block">
-                    <span>Hanna Wilson</span>
-                    <span
-                      ><a
-                        class="testimonials__people-text-link testimonials__people-text-link-padding"
-                        href="#"
-                        >wordfaang.com</a
-                      ></span
-                    >
-                    <div
-                      class="testimonials__people-bottom testimonials__people-bottom-padding"
-                    >
-                      <p>Suspendisse ultrices at diam lectus nullam.</p>
-                      <p>
-                        Nisl, sagittis viverra enim erat tortor ultricies massa
-                        turpis. Arcu pulvinar aenean nam laoreet nulla.
-                      </p>
+
+                    <picture class="testimonials__people-image-style">
+                        <source type="image/webp" srcset="assets/images/testimonials_right-image.webp" alt="left-image">
+                        <source type="image/png" srcset="assets/images/testimonials_right-image.png" alt="left-image">
+                        <img src="assets/images/testimonials_right-image.png" alt="left-image">
+                    </picture>
+
+                    <div class="testimonials__people-text-block">
+                        <span>Hanna Wilson</span>
+                        <span>
+                            <a class="testimonials__people-text-link testimonials__people-text-link-padding"
+                               href="#">wordfaang.com</a>
+                        </span>
+                        <div class="testimonials__people-bottom testimonials__people-bottom-padding">
+                            <p>Suspendisse ultrices at diam lectus nullam.</p>
+                            <p>
+                                Nisl, sagittis viverra enim erat tortor ultricies massa
+                                turpis. Arcu pulvinar aenean nam laoreet nulla.
+                            </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -539,6 +503,7 @@
                         <a
                           class="footer__right-link footer__right-link_facebook"
                           href="https://www.facebook.com/"
+                           aria-label="Facebook"
                           ><svg
                             class="footer__icon"
                             xmlns="http://www.w3.org/2000/svg"
@@ -563,6 +528,7 @@
                         <a
                           class="footer__right-link footer__right-link_twitter"
                           href="https://twitter.com/"
+                           aria-label="Twitter"
                         >
                           <svg
                             class="footer__icon"
@@ -584,6 +550,7 @@
                         <a
                           class="footer__right-link footer__right-link_instagram"
                           href="https://www.instagram.com/"
+                           aria-label="Instagram"
                         >
                           <svg
                             class="footer__icon"
